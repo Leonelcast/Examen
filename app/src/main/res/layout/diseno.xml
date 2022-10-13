@@ -1,6 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="40dp">
+
+    <ImageView
+        android:id="@+id/peliImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Spiderman" />
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="J.K. Rowling"
+        android:textSize="10sp"
+        android:layout_marginTop="120dp"
+        />
+
+    <TextView
+        android:id="@+id/peli_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peliImage"
+        android:layout_marginStart="40dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Los juegos del hambre"/>
+
+    <TextView
+        android:id="@+id/peli_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/peli_name"
+        app:layout_constraintStart_toEndOf="@id/peliImage"
+        android:textSize="11sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/peli_año"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/peli_author"
+        app:layout_constraintStart_toEndOf="@id/peliImage"
+        android:text="J.K. Rowling"
+        android:textSize="11sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/peli_año"
+        app:layout_constraintStart_toEndOf="@id/peliImage"
+        android:text="J.K. Rowling"
+        android:textSize="11sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tiempo"
+        app:layout_constraintStart_toEndOf="@id/peliImage"
+        android:text="J.K. Rowling"
+        android:textSize="11sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/genero"
+        app:layout_constraintStart_toEndOf="@id/peliImage"
+        android:text="J.K. Rowling"
+        android:textSize="11sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/actores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/director"
+        app:layout_constraintStart_toEndOf="@id/peliImage"
+        android:text="J.K. Rowling"
+        android:textSize="11sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

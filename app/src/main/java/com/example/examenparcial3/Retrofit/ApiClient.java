@@ -8,7 +8,7 @@ public class ApiClient {
     public static Retrofit getInstance() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://raw.githubusercontent.com/erik-sytnyk/movies-list/master")
+                    .baseUrl("https://raw.githubusercontent.com/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
